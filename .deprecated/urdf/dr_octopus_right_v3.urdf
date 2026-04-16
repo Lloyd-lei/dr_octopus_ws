@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="dr_octopus_right">
+  <!-- Static Dr Octopus visual (shell-free) on base_link -->
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://dr_octopus_right_description/meshes/right_arm_no_shell.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="arm_metal">
+        <color rgba="0.7 0.7 0.75 1.0" />
+      </material>
+    </visual>
+  </link>
+
+  <!-- Kinematic chain links (invisible, for TF frames only) -->
+  <link name="link0" />
+  <link name="link1" />
+  <link name="link2" />
+  <link name="link3_prime" />
+  <link name="link4_prime" />
+  <link name="link3" />
+  <link name="link4" />
+  <link name="link4_ext" />
+  <link name="link5" />
+  <link name="link6" />
+  <link name="link7" />
+  <link name="link7_pico" />
+  <link name="hand" />
+  <link name="hand_tcp" />
+  <link name="right_finger" />
+  <link name="left_finger" />
+
+  <!-- OpenArmX kinematic chain (raised base) -->
+  <joint name="base_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="link0" />
+    <origin xyz="0 -0.031 0.698" rpy="1.5708 0 0" />
+  </joint>
+
+  <joint name="joint1" type="revolute">
+    <parent link="link0" />
+    <child link="link1" />
+    <origin xyz="0 0 0.058" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit lower="-1.25" upper="3.0" effort="120" velocity="10.47" />
+  </joint>
+
+  <joint name="joint2" type="revolute">
+    <parent link="link1" />
+    <child link="link2" />
+    <origin xyz="-0.0205 0 0.081" rpy="1.5708 0 0" />
+    <axis xyz="-1 0 0" />
+    <limit lower="-0.1292" upper="3.2708" effort="120" velocity="10.47" />
+  </joint>
+
+  <joint name="joint3_prime" type="revolute">
+    <parent link="link2" />
+    <child link="link3_prime" />
+    <origin xyz="0.02 0 0.099" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit lower="-1.57" upper="1.57" effort="60" velocity="10.47" />
+  </joint>
+
+  <joint name="joint4_prime" type="revolute">
+    <parent link="link3_prime" />
+    <child link="link4_prime" />
+    <origin xyz="0 0.031002 0.14181" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="0.0" upper="1.8" effort="60" velocity="10.47" />
+  </joint>
+
+  <joint name="joint3" type="revolute">
+    <parent link="link4_prime" />
+    <child link="link3" />
+    <origin xyz="-0.02 -0.031 0.082" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit lower="-1.57" upper="1.57" effort="60" velocity="10.47" />
+  </joint>
+
+  <joint name="joint4" type="revolute">
+    <parent link="link3" />
+    <child link="link4" />
+    <origin xyz="0 0.031002 0.14181" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="0.0" upper="1.8" effort="60" velocity="10.47" />
+  </joint>
+
+  <joint name="joint4_ext" type="fixed">
+    <parent link="link4" />
+    <child link="link4_ext" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+  <joint name="joint5" type="revolute">
+    <parent link="link4" />
+    <child link="link5" />
+    <origin xyz="0 -0.0309 0.126" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit lower="-1.5" upper="1.5" effort="14" velocity="10.47" />
+  </joint>
+
+  <joint name="joint6" type="revolute">
+    <parent link="link5" />
+    <child link="link6" />
+    <origin xyz="0.037426 0 0.131" rpy="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit lower="-0.75" upper="0.75" effort="14" velocity="10.47" />
+  </joint>
+
+  <joint name="joint7" type="revolute">
+    <parent link="link6" />
+    <child link="link7" />
+    <origin xyz="-0.0375 0 0" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-1.4" upper="1.4" effort="14" velocity="10.47" />
+  </joint>
+
+  <joint name="link7_pico_joint" type="fixed">
+    <parent link="link7" />
+    <child link="link7_pico" />
+    <origin xyz="0 0 0" rpy="0 3.1416 4.7124" />
+  </joint>
+
+  <joint name="hand_joint" type="fixed">
+    <parent link="link7" />
+    <child link="hand" />
+    <origin xyz="0 0 0.1001" rpy="0 0 0" />
+  </joint>
+
+  <joint name="hand_tcp_joint" type="fixed">
+    <parent link="hand" />
+    <child link="hand_tcp" />
+    <origin xyz="0 0 0.08" rpy="0 0 0" />
+  </joint>
+
+  <joint name="finger_joint1" type="prismatic">
+    <parent link="hand" />
+    <child link="right_finger" />
+    <origin xyz="0 -0.006 0.015" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit lower="0.0" upper="0.044" effort="333" velocity="10.0" />
+  </joint>
+
+  <joint name="finger_joint2" type="prismatic">
+    <parent link="hand" />
+    <child link="left_finger" />
+    <origin xyz="0 0.006 0.015" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="0.0" upper="0.044" effort="333" velocity="10.0" />
+    <mimic joint="finger_joint1" multiplier="1" offset="0" />
+  </joint>
+
+</robot>

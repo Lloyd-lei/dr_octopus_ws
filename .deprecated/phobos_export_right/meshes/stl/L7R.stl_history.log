@@ -1,0 +1,3 @@
+Instantiated with filepath=None->None, scale=[1.0, 1.0, 1.0], mesh=<bpy_struct, Mesh("L7R") at 0x79e3b7f9fa20>, meshname=L7R, material=None, mesh_orientation=None
+->trying export of <bpy_struct, Mesh("L7R") at 0x79e3b7f9fa20> to /home/arenalabs/Desktop/Gen2Humanoid/dr_octopus_ws/phobos_export_right/meshes/stl/L7R.stl
+->wrote stl to /home/arenalabs/Desktop/Gen2Humanoid/dr_octopus_ws/phobos_export_right/meshes/stl/L7R.stl from bpy_types.Mesh

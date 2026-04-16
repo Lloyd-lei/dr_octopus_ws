@@ -1,0 +1,804 @@
+[
+  {
+    "name": "Arm2.1",
+    "parent": null,
+    "depth": 0,
+    "is_assembly": true,
+    "transform": {
+      "xyz_mm": [
+        0,
+        0,
+        0
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "name": "右臂",
+    "parent": "Arm2.1",
+    "depth": 1,
+    "is_assembly": true,
+    "transform": {
+      "xyz_mm": [
+        -52.054,
+        -143.171,
+        376.832
+      ],
+      "xyz_m": [
+        -0.052054,
+        -0.143171,
+        0.376832
+      ],
+      "rpy_rad": [
+        0.0,
+        -0.0,
+        -1.570796
+      ],
+      "rpy_deg": [
+        0.0,
+        -0.0,
+        -90.0
+      ]
+    }
+  },
+  {
+    "name": "L0R",
+    "parent": "右臂",
+    "depth": 2,
+    "is_assembly": true,
+    "transform": {
+      "xyz_mm": [
+        53.436,
+        88.107,
+        136.04
+      ],
+      "xyz_m": [
+        0.053436,
+        0.088107,
+        0.13604
+      ],
+      "rpy_rad": [
+        1.570796,
+        0.0,
+        -3.141593
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -180.0
+      ]
+    }
+  },
+  {
+    "name": "L1R",
+    "parent": "右臂",
+    "depth": 2,
+    "is_assembly": true,
+    "transform": {
+      "xyz_mm": [
+        48.776,
+        96.645,
+        138.924
+      ],
+      "xyz_m": [
+        0.048776,
+        0.096645,
+        0.138924
+      ],
+      "rpy_rad": [
+        1.570796,
+        0.0,
+        -3.141593
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -180.0
+      ]
+    }
+  },
+  {
+    "name": "L2R",
+    "parent": "右臂",
+    "depth": 2,
+    "is_assembly": true,
+    "transform": {
+      "xyz_mm": [
+        -60.396,
+        96.585,
+        138.405
+      ],
+      "xyz_m": [
+        -0.060396,
+        0.096585,
+        0.138405
+      ],
+      "rpy_rad": [
+        1.516014,
+        0.0,
+        -1.570796
+      ],
+      "rpy_deg": [
+        86.86,
+        0.0,
+        -90.0
+      ]
+    }
+  },
+  {
+    "name": "L3",
+    "parent": "右臂",
+    "depth": 2,
+    "is_assembly": true,
+    "transform": {
+      "xyz_mm": [
+        -66.228,
+        93.701,
+        132.32
+      ],
+      "xyz_m": [
+        -0.066228,
+        0.093701,
+        0.13232
+      ],
+      "rpy_rad": [
+        1.570796,
+        0.0,
+        -1.570796
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ]
+    }
+  },
+  {
+    "name": "L41",
+    "parent": "右臂",
+    "depth": 2,
+    "is_assembly": true,
+    "transform": {
+      "xyz_mm": [
+        -75.305,
+        95.432,
+        65.942
+      ],
+      "xyz_m": [
+        -0.075305,
+        0.095432,
+        0.065942
+      ],
+      "rpy_rad": [
+        1.178097,
+        0.0,
+        -1.570796
+      ],
+      "rpy_deg": [
+        67.5,
+        0.0,
+        -90.0
+      ]
+    }
+  },
+  {
+    "name": "右臂 - 副本",
+    "parent": "Arm2.1",
+    "depth": 1,
+    "is_assembly": true,
+    "transform": {
+      "xyz_mm": [
+        -51.951,
+        141.302,
+        382.706
+      ],
+      "xyz_m": [
+        -0.051951,
+        0.141302,
+        0.382706
+      ],
+      "rpy_rad": [
+        -0.0,
+        0.392699,
+        -1.570796
+      ],
+      "rpy_deg": [
+        -0.0,
+        22.5,
+        -90.0
+      ]
+    }
+  },
+  {
+    "name": "L3",
+    "parent": "右臂 - 副本",
+    "depth": 2,
+    "is_assembly": true,
+    "transform": {
+      "xyz_mm": [
+        -66.228,
+        93.701,
+        132.32
+      ],
+      "xyz_m": [
+        -0.066228,
+        0.093701,
+        0.13232
+      ],
+      "rpy_rad": [
+        1.570796,
+        0.0,
+        -1.570796
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ]
+    }
+  },
+  {
+    "name": "L4",
+    "parent": "右臂 - 副本",
+    "depth": 2,
+    "is_assembly": true,
+    "transform": {
+      "xyz_mm": [
+        -58.553,
+        95.432,
+        135.54
+      ],
+      "xyz_m": [
+        -0.058553,
+        0.095432,
+        0.13554
+      ],
+      "rpy_rad": [
+        1.570796,
+        0.0,
+        -1.570796
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ]
+    }
+  },
+  {
+    "name": "L5R",
+    "parent": "右臂 - 副本",
+    "depth": 2,
+    "is_assembly": true,
+    "transform": {
+      "xyz_mm": [
+        -79.553,
+        77.932,
+        132.79
+      ],
+      "xyz_m": [
+        -0.079553,
+        0.077932,
+        0.13279
+      ],
+      "rpy_rad": [
+        1.570796,
+        0.0,
+        -1.570796
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ]
+    }
+  },
+  {
+    "name": "L6R",
+    "parent": "右臂 - 副本",
+    "depth": 2,
+    "is_assembly": true,
+    "transform": {
+      "xyz_mm": [
+        -82.553,
+        77.932,
+        132.79
+      ],
+      "xyz_m": [
+        -0.082553,
+        0.077932,
+        0.13279
+      ],
+      "rpy_rad": [
+        1.570796,
+        0.0,
+        -1.570796
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ]
+    }
+  },
+  {
+    "name": "L7R",
+    "parent": "右臂 - 副本",
+    "depth": 2,
+    "is_assembly": true,
+    "transform": {
+      "xyz_mm": [
+        -86.313,
+        -12.13,
+        151.177
+      ],
+      "xyz_m": [
+        -0.086313,
+        -0.01213,
+        0.151177
+      ],
+      "rpy_rad": [
+        -1.570796,
+        -0.0,
+        1.570796
+      ],
+      "rpy_deg": [
+        -90.0,
+        -0.0,
+        90.0
+      ]
+    }
+  },
+  {
+    "name": "EE_Sub_Assembly^RB1 - 副本",
+    "parent": "L7R",
+    "depth": 3,
+    "is_assembly": true,
+    "transform": {
+      "xyz_mm": [
+        53.814,
+        8.026,
+        477.138
+      ],
+      "xyz_m": [
+        0.053814,
+        0.008026,
+        0.477138
+      ],
+      "rpy_rad": [
+        -0.0,
+        -0.0,
+        -1.570796
+      ],
+      "rpy_deg": [
+        -0.0,
+        -0.0,
+        -90.0
+      ]
+    }
+  },
+  {
+    "name": "rse2b10-155_rail^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        -4.5,
+        77.5,
+        65.0
+      ],
+      "xyz_m": [
+        -0.0045,
+        0.0775,
+        0.065
+      ],
+      "rpy_rad": [
+        1.570796,
+        0.0,
+        -0.0
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -0.0
+      ]
+    }
+  },
+  {
+    "name": "mr126zz^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        -18.6,
+        62.5,
+        61.3
+      ],
+      "xyz_m": [
+        -0.0186,
+        0.0625,
+        0.0613
+      ],
+      "rpy_rad": [
+        0.0,
+        -0.0,
+        -0.266689
+      ],
+      "rpy_deg": [
+        0.0,
+        -0.0,
+        -15.28
+      ]
+    }
+  },
+  {
+    "name": "mr126zz^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        -27.824,
+        28.737,
+        60.3
+      ],
+      "xyz_m": [
+        -0.027824,
+        0.028737,
+        0.0603
+      ],
+      "rpy_rad": [
+        0.0,
+        -0.0,
+        -0.266689
+      ],
+      "rpy_deg": [
+        0.0,
+        -0.0,
+        -15.28
+      ]
+    }
+  },
+  {
+    "name": "mr126zz^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        18.6,
+        -62.5,
+        60.5
+      ],
+      "xyz_m": [
+        0.0186,
+        -0.0625,
+        0.0605
+      ],
+      "rpy_rad": [
+        0.0,
+        -0.0,
+        -0.266689
+      ],
+      "rpy_deg": [
+        0.0,
+        -0.0,
+        -15.28
+      ]
+    }
+  },
+  {
+    "name": "mr126zz^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        27.824,
+        -28.737,
+        59.5
+      ],
+      "xyz_m": [
+        0.027824,
+        -0.028737,
+        0.0595
+      ],
+      "rpy_rad": [
+        -0.0,
+        -0.0,
+        2.194663
+      ],
+      "rpy_deg": [
+        -0.0,
+        -0.0,
+        125.74
+      ]
+    }
+  },
+  {
+    "name": "dbsy4-5-4^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        -27.824,
+        28.737,
+        68.1
+      ],
+      "xyz_m": [
+        -0.027824,
+        0.028737,
+        0.0681
+      ],
+      "rpy_rad": [
+        3.141593,
+        -0.0,
+        0.651231
+      ],
+      "rpy_deg": [
+        180.0,
+        -0.0,
+        37.31
+      ]
+    }
+  },
+  {
+    "name": "dbsy4-5-4^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        27.824,
+        -28.737,
+        67.3
+      ],
+      "xyz_m": [
+        0.027824,
+        -0.028737,
+        0.0673
+      ],
+      "rpy_rad": [
+        -3.141593,
+        0.0,
+        2.363381
+      ],
+      "rpy_deg": [
+        -180.0,
+        0.0,
+        135.41
+      ]
+    }
+  },
+  {
+    "name": "dbsy4-5-4^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        -18.6,
+        62.5,
+        57.5
+      ],
+      "xyz_m": [
+        -0.0186,
+        0.0625,
+        0.0575
+      ],
+      "rpy_rad": [
+        -0.0,
+        0.0,
+        2.609343
+      ],
+      "rpy_deg": [
+        -0.0,
+        0.0,
+        149.5
+      ]
+    }
+  },
+  {
+    "name": "dbsy4-5-4^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        18.6,
+        -62.5,
+        57.5
+      ],
+      "xyz_m": [
+        0.0186,
+        -0.0625,
+        0.0575
+      ],
+      "rpy_rad": [
+        -0.0,
+        0.0,
+        2.676812
+      ],
+      "rpy_deg": [
+        -0.0,
+        0.0,
+        153.37
+      ]
+    }
+  },
+  {
+    "name": "cbe3-5^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        0.0,
+        50.0,
+        64.5
+      ],
+      "xyz_m": [
+        0.0,
+        0.05,
+        0.0645
+      ],
+      "rpy_rad": [
+        -3.141593,
+        0.0,
+        -3.141593
+      ],
+      "rpy_deg": [
+        -180.0,
+        0.0,
+        -180.0
+      ]
+    }
+  },
+  {
+    "name": "cbe3-5^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        -0.0,
+        70.0,
+        64.5
+      ],
+      "xyz_m": [
+        -0.0,
+        0.07,
+        0.0645
+      ],
+      "rpy_rad": [
+        -3.141593,
+        0.0,
+        -3.141593
+      ],
+      "rpy_deg": [
+        -180.0,
+        0.0,
+        -180.0
+      ]
+    }
+  },
+  {
+    "name": "cbe3-5^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        0.0,
+        -70.0,
+        64.5
+      ],
+      "xyz_m": [
+        0.0,
+        -0.07,
+        0.0645
+      ],
+      "rpy_rad": [
+        -3.141593,
+        0.0,
+        -3.141593
+      ],
+      "rpy_deg": [
+        -180.0,
+        0.0,
+        -180.0
+      ]
+    }
+  },
+  {
+    "name": "cbe3-5^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        0.0,
+        -50.0,
+        64.5
+      ],
+      "xyz_m": [
+        0.0,
+        -0.05,
+        0.0645
+      ],
+      "rpy_rad": [
+        -3.141593,
+        0.0,
+        -3.141593
+      ],
+      "rpy_deg": [
+        -180.0,
+        0.0,
+        -180.0
+      ]
+    }
+  },
+  {
+    "name": "rse2b10-155_block^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        -0.0,
+        62.5,
+        59.5
+      ],
+      "xyz_m": [
+        -0.0,
+        0.0625,
+        0.0595
+      ],
+      "rpy_rad": [
+        1.570796,
+        -0.0,
+        -0.0
+      ],
+      "rpy_deg": [
+        90.0,
+        -0.0,
+        -0.0
+      ]
+    }
+  },
+  {
+    "name": "rse2b10-155_block^EE_Sub_Assembly_RB1 - 副本",
+    "parent": "EE_Sub_Assembly^RB1 - 副本",
+    "depth": 4,
+    "is_assembly": false,
+    "transform": {
+      "xyz_mm": [
+        0.0,
+        -62.5,
+        59.5
+      ],
+      "xyz_m": [
+        0.0,
+        -0.0625,
+        0.0595
+      ],
+      "rpy_rad": [
+        1.570796,
+        -0.0,
+        0.0
+      ],
+      "rpy_deg": [
+        90.0,
+        -0.0,
+        0.0
+      ]
+    }
+  }
+]

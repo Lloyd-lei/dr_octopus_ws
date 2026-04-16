@@ -1,0 +1,227 @@
+<?xml version="1.0" ?>
+<robot name="dr_octopus_left" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <material name="grey"><color rgba="0.7 0.7 0.7 1.0"/></material>
+  <material name="dark_grey"><color rgba="0.3 0.3 0.3 1.0"/></material>
+
+  <link name="base_link"/>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="link0"/>
+    <origin xyz="-0.025473 0.281107 0.520182" rpy="0 0 0"/>
+  </joint>
+
+  <link name="link0">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://dr_octopus_left_description/meshes/link0.stl"/></geometry>
+      <material name="grey"/>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="joint1" type="revolute">
+    <parent link="link0"/>
+    <child link="link1"/>
+    <origin xyz="0.017693 -0.058500 -0.004599" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.25" upper="3.0" effort="120" velocity="10.47"/>
+  </joint>
+
+  <link name="link1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://dr_octopus_left_description/meshes/link1.stl"/></geometry>
+      <material name="dark_grey"/>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="joint2" type="revolute">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="-0.003600 -0.080500 -0.031253" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.7" upper="1.7" effort="120" velocity="10.47"/>
+  </joint>
+
+  <link name="link2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://dr_octopus_left_description/meshes/link2.stl"/></geometry>
+      <material name="grey"/>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="joint3_prime" type="revolute">
+    <parent link="link2"/>
+    <child link="link3_prime"/>
+    <origin xyz="0.000895 -0.096428 0.035645" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.57" upper="1.57" effort="60" velocity="10.47"/>
+  </joint>
+
+  <link name="link3_prime">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://dr_octopus_left_description/meshes/link3_prime.stl"/></geometry>
+      <material name="dark_grey"/>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="joint4_prime" type="revolute">
+    <parent link="link3_prime"/>
+    <child link="link4_prime"/>
+    <origin xyz="0.036615 -0.155641 -0.001206" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0.0" upper="1.8" effort="60" velocity="10.47"/>
+  </joint>
+
+  <link name="link4_prime">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://dr_octopus_left_description/meshes/link4_prime.stl"/></geometry>
+      <material name="grey"/>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="joint3" type="revolute">
+    <parent link="link4_prime"/>
+    <child link="link3"/>
+    <origin xyz="-0.036460 -0.057459 0.065411" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.57" upper="1.57" effort="60" velocity="10.47"/>
+  </joint>
+
+  <link name="link3">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://dr_octopus_left_description/meshes/link3.stl"/></geometry>
+      <material name="dark_grey"/>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="joint4" type="revolute">
+    <parent link="link3"/>
+    <child link="link4"/>
+    <origin xyz="0.001889 -0.152052 0.021841" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0.0" upper="1.8" effort="60" velocity="10.47"/>
+  </joint>
+
+  <link name="link4">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://dr_octopus_left_description/meshes/link4.stl"/></geometry>
+      <material name="grey"/>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="joint5" type="revolute">
+    <parent link="link4"/>
+    <child link="link5"/>
+    <origin xyz="0.000117 -0.112391 0.042053" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.5" upper="1.5" effort="14" velocity="10.47"/>
+  </joint>
+
+  <link name="link5">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://dr_octopus_left_description/meshes/link5.stl"/></geometry>
+      <material name="dark_grey"/>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="joint6" type="revolute">
+    <parent link="link5"/>
+    <child link="link6"/>
+    <origin xyz="-0.001910 -0.078977 0.033898" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.75" upper="0.75" effort="14" velocity="10.47"/>
+  </joint>
+
+  <link name="link6">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://dr_octopus_left_description/meshes/link6.stl"/></geometry>
+      <material name="grey"/>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="joint7" type="revolute">
+    <parent link="link6"/>
+    <child link="link7"/>
+    <origin xyz="0.020944 -0.042122 0.019970" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-1.4" upper="1.4" effort="14" velocity="10.47"/>
+  </joint>
+
+  <link name="link7">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://dr_octopus_left_description/meshes/link7.stl"/></geometry>
+      <material name="dark_grey"/>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="joint_ee" type="prismatic">
+    <parent link="link7"/>
+    <child link="ee"/>
+    <origin xyz="-0.020977 -0.139232 0.074977" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="0.044" effort="333" velocity="10.0"/>
+  </joint>
+
+  <link name="ee">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://dr_octopus_left_description/meshes/ee.stl"/></geometry>
+      <material name="grey"/>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+</robot>
